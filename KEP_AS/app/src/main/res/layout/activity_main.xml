@@ -11,7 +11,7 @@
     android:paddingTop="15dp">
 
     <LinearLayout
-        android:id="@+id/Edit_text"
+        android:id="@+id/TextRegion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -19,7 +19,7 @@
         >
 
         <TextView
-            android:id="@+id/Text1"
+            android:id="@+id/TextView1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
@@ -33,7 +33,7 @@
             android:weightSum="2"
             android:orientation="horizontal">
             <EditText
-                android:id="@+id/Edit_1"
+                android:id="@+id/EditText1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Enter name"
@@ -51,15 +51,16 @@
         android:id="@+id/Button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/Edit_text"
+        android:layout_below="@+id/TextRegion"
         android:text="Show toast"
         /><Button
     android:id="@+id/Button2"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_below="@+id/Edit_text"
+    android:layout_below="@+id/TextRegion"
     android:layout_alignParentRight="true"
     android:text="Next activity"
+    android:onClick="Clicked"
     />
 </RelativeLayout>
 
