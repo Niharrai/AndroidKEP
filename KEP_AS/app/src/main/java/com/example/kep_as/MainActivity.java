@@ -2,6 +2,7 @@ package com.example.kep_as;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.view.View;
@@ -25,10 +26,11 @@ public class MainActivity extends AppCompatActivity {
             toast = et1.getText().toString();
         }*/
         b1.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
 
-               /*if(!et1.getText().toString().matches(""))
+                 /*if(!et1.getText().toString().matches(""))
                 {
                     toast = et1.getText().toString();
                 }*/
@@ -38,7 +40,8 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     public void Clicked(View v){
-        //add the intent
+        Intent intent = new Intent(this,RecyclerActivity.class);
+        startActivity(intent);
     }
 
 }
